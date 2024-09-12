@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Sotomayor's Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle" checked>
+                <span class="slider"></span>
+            </label>
+            <p id="theme-label">Light</p>
+        </div>
+
+        <header>
+            <h1>Cristian Sotomayor</h1>
+            <nav>
+                <a href="#experience-section">Experience</a>
+                <a href="#projects-section">Projects</a>
+                <a class="exempt" href="mailto:csotomayorarch@gmail.com">Email</a>
+                <a class="exempt" href="https://www.linkedin.com/in/cristian-sotomayor/">LinkedIn</a>
+                <a class="exempt" href="https://github.com/CristianSotomayorGit">GitHub</a>
+
+
+            </nav>
+        </header>
+
+        <section id="experience-section">
+            <h3>Experience</h3>
+
+            <div class="job-section">
+                <p class="position">3D Software Engineer</p>
+                <p class="section-info company">That Open</p>
+                <p class="section-info time">February 2024 – Present</p>
+                <p class="section-info location">Remote</p>
+                <ul class="bullet-list">
+                    <li>Designed 3D geometry generating algorithms using Typescript/JavaScript/Three.js for an
+                        open-source 3D modeling library</li>
+                    <li>Built reusable components with Typescript generics for improved type safety and scalability in
+                        rendering and modeling 3D assets</li>
+                    <li>Implemented real-time update methods using Typescript and Three.js to reflect transformations
+                        and adjustments in 3D models</li>
+                    <li>Public commit 1: <a
+                            href="https://github.com/ThatOpen/engine_clay/commit/9d5a080554248f9425a6196078b8f41b627ff741">Commit
+                            1</a>, Public commit 2: <a
+                            href="https://github.com/ThatOpen/engine_clay/commit/94d80b29958c379b6a37b2d4db4916d59d90246c">Commit
+                            2</a></li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <p class="position">Full Stack Software Engineer</p>
+                <p class="section-info company">See Tickets</p>
+                <p class="section-info time">September 2023 – February 2024</p>
+                <p class="section-info location">Los Angeles, CA</p>
+                <ul class="bullet-list">
+                    <li>Led the migration of functionality from a ASP.NET/C# web app to a Typescript/Node.js REST API
+                        that syncs high volumes of disputed payments and refunds to fill an emergent growth in requests
+                    </li>
+                    <li>Integrated Stripe’s payments API with See Tickets’ Node.js API to automate the manual fetching
+                        of payment and refund information with the use of C# on AWS Lambda, and an AWS S3 bucket to
+                        store payment information</li>
+                    <li>Utilized SQL to track the loss of crucial payment information lost in a high-traffic SQL Server
+                        Database</li>
+                    <li>Assisted in the implementation and debugging of a newly developed Typescript/React checkout page
+                        and its UI components</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <p class="position">Full Stack Software Developer</p>
+                <p class="section-info company">HRD Aerosystems</p>
+                <p class="section-info time">March 2022 – August 2023</p>
+                <p class="section-info location">Los Angeles, CA</p>
+                <ul class="bullet-list">
+                    <li>Developed and maintained a Blazor Server web application with C#, to enable airplane mechanics
+                        in an FAA-audited environment to view and update confidential documents and part manuals on both
+                        mobile and desktop platforms</li>
+                    <li>Normalized and migrated a legacy Access 2000 database with over 10,000 confidential documents to
+                        a MySQL database</li>
+                    <li>Developed and maintained a desktop app using C#, .NET, and MySQL to automate the tracking and
+                        billing of materials recycling</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <p class="position">Full Stack Software Developer</p>
+                <p class="section-info company">CG Custom Tile & Marble</p>
+                <p class="section-info time">February 2020 – February 2022</p>
+                <p class="section-info location">Los Angeles, CA</p>
+                <ul class="bullet-list">
+                    <li>Transitioned estimating department from Excel by developing a CRUD application using C#, .NET,
+                        SQL Server, and WPF</li>
+                    <li>Designed SQL Server schemas, managing complex data relationships for $1M - $2M construction
+                        projects</li>
+                    <li>Used Python to extract and normalize client data from PDF, Excel files, etc. into CSV files with
+                        3NF normalization level</li>
+                    <li>Developed SQL scripts for reporting, supporting decision-making for material purchases, labor
+                        hiring, and price bidding</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <p class="position">Architectural Designer</p>
+                <p class="section-info time">May 2015 – September 2019</p>
+                <p class="section-info location">New York Metropolitan Area</p>
+                <ul class="bullet-list">
+                    <li>Utilized Python and C# to develop scripts for 3D modeling software such as Rhino3D/Revit/Blender
+                    </li>
+                    <li>Managed zoning board approvals, schematic designs, and construction documents for architectural
+                        projects</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects-section">
+            <h3>Projects</h3>
+            <div class="project-section">
+                <p class="project-title">WebGL Isometric Surface Viewer</p>
+                <span class="description">
+                    <p class="project-details">An interactive WebGL application that renders dynamic surfaces. <a
+                            href="https://cristiansotomayorgit.github.io/surface-waves/">Demo Link</a></p>
+                    <ul class="bullet-list">
+                        <li>Created a real-time 3D surface visualization tool using WebGL and React.</li>
+                        <li>Implemented an isometric camera view with dynamic mouse-based rotation and zoom
+                            functionality.</li>
+                        <li>Developed vertex and fragment shaders for rendering surfaces with customizable color
+                            schemes.</li>
+                        <li>Integrated responsive UI to handle spacebar-triggered animation and interactive scaling.
+                        </li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="project-section">
+                <p class="project-title">Retro Raycaster Game</p>
+                <span class="description">
+                    <p class="project-details">A 3D simulation inspired by retro gaming. <a
+                            href="https://cristiansotomayorgit.github.io/webgl_raycaster_ui">Demo Link</a></p>
+                    <ul class="bullet-list">
+                        <li>Implemented a ray-casting algorithm in Typescript to detect objects, boundaries, and
+                            rendering distances in 3D simulations.</li>
+                        <li>Developed vertex and fragment shaders using WebGL to enable lighting and textures for retro
+                            3D graphics.</li>
+                        <li>Designed user interface with React to manage player controls and state.</li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="project-section">
+                <p class="project-title">Archivy – AI Assistant</p>
+                <span class="description">
+                    <p class="project-details">A Building Code Analysis AI Assistant for Construction Professionals. <a
+                            href="http://archivy.io">Demo Link</a></p>
+                    <ul class="bullet-list">
+                        <li>Designed and developed a web app with Python and LLMs to simplify construction law
+                            interpretation.</li>
+                        <li>Utilized Retrieval-Augmented Generation (RAG) for accurate building code interpretations.
+                        </li>
+                        <li>Migrating MVP to React Frontend, Node.js backend, and PostgreSQL DB on AWS.</li>
+                    </ul>
+                </span>
+            </div>
+        </section>
+        <script>
+            const toggleSwitch = document.getElementById('theme-toggle');
+            const themeLabel = document.getElementById('theme-label');
+            const body = document.body;
+
+            // Function to switch between dark and light mode and update the label text
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    body.classList.add('dark-mode');
+                    themeLabel.textContent = "Light" // Dark mode text
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.remove('dark-mode');
+                    themeLabel.textContent = "Dark"; // Light mode text
+                    localStorage.setItem('theme', 'dark');
+                }
+            }
+
+            // Load theme based on localStorage or system preference
+            function loadTheme() {
+                const storedTheme = localStorage.getItem('theme');
+                if (storedTheme === 'dark') {
+                    body.classList.add('dark-mode');
+                    toggleSwitch.checked = true;
+                    themeLabel.textContent = "Light";
+                } else {
+                    body.classList.remove('dark-mode');
+                    toggleSwitch.checked = false;
+                    themeLabel.textContent = "Dark";
+                }
+            }
+
+            // Scroll to sections smoothly
+            document.querySelectorAll('nav a').forEach(anchor => {
+                if (anchor.className !== "exempt") {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            });
+
+            toggleSwitch.addEventListener('change', switchTheme);
+            loadTheme();
+        </script>
+</body>
+
+</html>
+
+
+
+<style>
+    /* Light mode styles */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #f5f5f5;
+        color: #222;
+    }
+
+    .page {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Allows content to wrap */
+    }
+
+    h1 {
+        font-size: 32px;
+        font-family: Georgia, serif;
+        margin: 0;
+    }
+
+    /* Navigation layout for wider screens */
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        height: 0px;
+    }
+
+    nav a {
+        color: #0645AD;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive layout for screens less than 670px */
+    @media (max-width: 670px) {
+        header {
+            flex-direction: column;
+            /* Stack header content vertically */
+            align-items: flex-start;
+            /* Align to the left */
+        }
+
+        nav {
+            margin-top: 10px;
+            /* Add space between the title and navigation */
+        }
+
+        h1 {
+            text-align: center;
+            /* Keep the title centered */
+            width: 100%;
+            /* Take full width of the container */
+        }
+
+        nav {
+            padding-top: 20px;
+            justify-content: center;
+            /* Center the nav below h1 */
+            width: 100%;
+            /* Ensure the nav spans full width */
+            height: 40px;
+        }
+
+        nav a {
+            text-align: center;
+            /* Center the nav links */
+            flex: 1;
+            /* Each link takes up equal space */
+        }
+    }
+
+    /* Rest of the styles remain the same */
+    h3 {
+        font-size: 24px;
+        font-family: Georgia, serif;
+        margin-top: 40px;
+    }
+
+    .job-section,
+    .project-section {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .position,
+    .project-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0645AD;
+    }
+
+    .company,
+    .time,
+    .location,
+    .project-details,
+    .contact-info {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+        font-style: italic;
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+
+    .bullet-list {
+        margin-left: 20px;
+        list-style: disc;
+    }
+
+    .bullet-list li {
+        margin-bottom: 10px;
+    }
+
+    .bullet-list a {
+        color: #0645AD;
+        text-decoration: none;
+    }
+
+    .bullet-list a:hover {
+        text-decoration: underline;
+    }
+
+    /* Toggle switch styling */
+    .toggle-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 34px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+
+    input:checked+.slider {
+        background-color: #bb86fc;
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(14px);
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+
+    body.dark-mode .page {
+        background-color: #1d1d1d;
+        box-shadow: none;
+    }
+
+    body.dark-mode h1,
+    body.dark-mode h3 {
+        color: #f5f5f5;
+    }
+
+    body.dark-mode nav a {
+        color: #bb86fc;
+    }
+
+    body.dark-mode nav a:hover {
+        color: #f5f5f5;
+    }
+
+    body.dark-mode .position,
+    body.dark-mode .project-title {
+        color: #bb86fc;
+    }
+
+    body.dark-mode .company,
+    body.dark-mode .time,
+    body.dark-mode .location,
+    body.dark-mode .project-details,
+    body.dark-mode .contact-info {
+        color: #999;
+    }
+
+    body.dark-mode .job-section,
+    body.dark-mode .project-section {
+        border-bottom: 1px solid #333;
+    }
+
+    body.dark-mode .bullet-list a {
+        color: #bb86fc;
+    }
+</style>
